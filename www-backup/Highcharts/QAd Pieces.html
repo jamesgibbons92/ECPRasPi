@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+<!--		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'QA Pieces'
+        },
+        xAxis: {
+            categories: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Pieces'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'orange'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+   tooltip: {
+            shared: true
+        },
+         plotOptions: {
+            column: {
+                grouping: false,
+                shadow: false,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Visual Checked',
+            data: [Array[0][1], DataQA[1][1],DataQA[2][1],DataQA[3][1],DataQA[4][1]],
+        }, {
+            name: 'QA',
+            data: [DataQA[0][2], DataQA[1][2],DataQA[2][2],DataQA[3][2],DataQA[4][2]],
+        }]
+    });
+});
+		</script> -->
+	</head>
+	<body>
+<script src="./js/highcharts.js"></script>
+<script src="./js/modules/exporting.js"></script>
+<script src="js/main.js"></script>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

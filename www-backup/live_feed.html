@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC>
+
+
+
+<html lang="en">
+
+
+
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="Highcharts/js/main.js"></script>
+
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Live Feed</title>
+
+  <script>
+  function go(loc) {
+    document.getElementById('ifrm1').src = loc;
+  }
+
+  function go2(loc) {
+    document.getElementById('ifrm2').src = loc;
+  }
+
+  function go3(loc) {
+    document.getElementById('ifrm3').src = loc;
+  }
+
+
+  </script>
+<script>
+var flagcam=0;
+var flag=0;
+setInterval(function () {if (flagcam==1) {go('http://everyonecanprogram.com/web/picam/ultimakercam.jpg');flagcam='0';}else {go('http://everyonecanprogram.com/web/picam/makerbotcam2.jpg');flagcam='1';}}, 6000);
+setInterval(function () {if (flag==1) {go2('index.php');flag='0';}else {go2('index.php');flag='1';}}, 100000);
+setInterval(function () {if (flag==1) {go3('index2.php');flag='0';}else {go3('index2.php');flag='1';}}, 100000);
+
+</script>
+</head>
+
+
+
+<body>
+
+
+
+<iframe style="float: left; width:49%; height: 59%;" id="ifrm1" src="http://everyonecanprogram.com/web/picam/ultimakercam.jpg"></iframe>
+<iframe style="float: right; width:49%;  height: 100%" id="ifrm2" src="index.php"></iframe>
+<iframe style="float: left; width:49%; height: 39%;" id="ifrm3" src="index2.php"></iframe>
+
+
+
+</body>
+
+
+
+</html>
+
